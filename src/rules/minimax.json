@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://agent.minimax.io"
+        },
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://agent.minimax.io"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||agent.minimax.io",
+      "resourceTypes": ["xmlhttprequest", "websocket"]
+    }
+  }
+]
