@@ -10,6 +10,7 @@ import geminiLogo from '~/assets/logos/gemini.png'
 import grokLogo from '~/assets/logos/grok.png'
 import kimiLogo from '~/assets/logos/kimi.svg'
 import llamaLogo from '~/assets/logos/llama.png'
+import minimaxLogo from '~/assets/logos/minimax.svg'
 import mistralLogo from '~/assets/logos/mistral.png'
 import piLogo from '~/assets/logos/pi.png'
 import pplxLogo from '~/assets/logos/pplx.jpg'
@@ -36,6 +37,10 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
   kimi: {
     name: 'Kimi',
     avatar: kimiLogo,
+  },
+  minimax: {
+    name: 'MiniMax',
+    avatar: minimaxLogo,
   },
   bard: {
     name: 'Bard',

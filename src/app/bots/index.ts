@@ -8,6 +8,7 @@ import { GeminiBot } from './gemini-api'
 import { GrokWebBot } from './grok'
 import { KimiWebBot } from './kimi-web'
 import { LMSYSBot } from './lmsys'
+import { MiniMaxWebBot } from './minimax-web'
 import { PerplexityBot } from './perplexity'
 import { PiBot } from './pi'
 import { QianwenWebBot } from './qianwen'
@@ -20,6 +21,7 @@ export type BotId =
   | 'claude'
   | 'deepseek'
   | 'kimi'
+  | 'minimax'
   | 'perplexity'
   | 'xunfei'
   | 'vicuna'
@@ -49,6 +51,8 @@ export function createBotInstance(botId: BotId) {
       return new DeepSeekWebBot()
     case 'kimi':
       return new KimiWebBot()
+    case 'minimax':
+      return new MiniMaxWebBot()
     case 'xunfei':
       return new XunfeiBot()
     case 'vicuna':
