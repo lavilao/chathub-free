@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://chat.z.ai"
+        },
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://chat.z.ai"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||chat.z.ai",
+      "resourceTypes": ["xmlhttprequest", "websocket"]
+    }
+  }
+]

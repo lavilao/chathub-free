@@ -19,6 +19,7 @@ import vicunaLogo from '~/assets/logos/vicuna.jpg'
 import wizardlmLogo from '~/assets/logos/wizardlm.png'
 import xunfeiLogo from '~/assets/logos/xunfei.png'
 import yiLogo from '~/assets/logos/yi.svg'
+import zaiLogo from '~/assets/logos/zai.svg'
 import { BotId } from './bots'
 
 export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
@@ -41,6 +42,10 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
   minimax: {
     name: 'MiniMax',
     avatar: minimaxLogo,
+  },
+  zai: {
+    name: 'Z.AI',
+    avatar: zaiLogo,
   },
   bard: {
     name: 'Bard',

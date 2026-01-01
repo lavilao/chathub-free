@@ -13,6 +13,7 @@ import { PerplexityBot } from './perplexity'
 import { PiBot } from './pi'
 import { QianwenWebBot } from './qianwen'
 import { XunfeiBot } from './xunfei'
+import { ZAIWebBot } from './zai-web'
 
 export type BotId =
   | 'chatgpt'
@@ -24,6 +25,7 @@ export type BotId =
   | 'minimax'
   | 'perplexity'
   | 'xunfei'
+  | 'zai'
   | 'vicuna'
   | 'falcon'
   | 'mistral'
@@ -53,6 +55,8 @@ export function createBotInstance(botId: BotId) {
       return new KimiWebBot()
     case 'minimax':
       return new MiniMaxWebBot()
+    case 'zai':
+      return new ZAIWebBot()
     case 'xunfei':
       return new XunfeiBot()
     case 'vicuna':
