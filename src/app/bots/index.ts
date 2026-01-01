@@ -3,6 +3,7 @@ import { BardBot } from './bard'
 import { BingWebBot } from './bing'
 import { ChatGPTBot } from './chatgpt'
 import { ClaudeBot } from './claude'
+import { DeepSeekWebBot } from './deepseek-web'
 import { GeminiBot } from './gemini-api'
 import { GrokWebBot } from './grok'
 import { LMSYSBot } from './lmsys'
@@ -16,6 +17,7 @@ export type BotId =
   | 'bing'
   | 'bard'
   | 'claude'
+  | 'deepseek'
   | 'perplexity'
   | 'xunfei'
   | 'vicuna'
@@ -41,6 +43,8 @@ export function createBotInstance(botId: BotId) {
       return new BardBot()
     case 'claude':
       return new ClaudeBot()
+    case 'deepseek':
+      return new DeepSeekWebBot()
     case 'xunfei':
       return new XunfeiBot()
     case 'vicuna':

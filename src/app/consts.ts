@@ -4,6 +4,7 @@ import bardLogo from '~/assets/logos/bard.svg'
 import bingLogo from '~/assets/logos/bing.svg'
 import chatglmLogo from '~/assets/logos/chatglm.svg'
 import chatgptLogo from '~/assets/logos/chatgpt.svg'
+import deepseekLogo from '~/assets/logos/deepseek.svg'
 import falconLogo from '~/assets/logos/falcon.jpeg'
 import geminiLogo from '~/assets/logos/gemini.png'
 import grokLogo from '~/assets/logos/grok.png'
@@ -26,6 +27,10 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
   claude: {
     name: 'Claude',
     avatar: claudeLogo,
+  },
+  deepseek: {
+    name: 'DeepSeek',
+    avatar: deepseekLogo,
   },
   bard: {
     name: 'Bard',
