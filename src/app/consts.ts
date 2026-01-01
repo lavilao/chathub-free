@@ -8,6 +8,7 @@ import deepseekLogo from '~/assets/logos/deepseek.svg'
 import falconLogo from '~/assets/logos/falcon.jpeg'
 import geminiLogo from '~/assets/logos/gemini.png'
 import grokLogo from '~/assets/logos/grok.png'
+import kimiLogo from '~/assets/logos/kimi.svg'
 import llamaLogo from '~/assets/logos/llama.png'
 import mistralLogo from '~/assets/logos/mistral.png'
 import piLogo from '~/assets/logos/pi.png'
@@ -31,6 +32,10 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
   deepseek: {
     name: 'DeepSeek',
     avatar: deepseekLogo,
+  },
+  kimi: {
+    name: 'Kimi',
+    avatar: kimiLogo,
   },
   bard: {
     name: 'Bard',

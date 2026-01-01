@@ -6,6 +6,7 @@ import { ClaudeBot } from './claude'
 import { DeepSeekWebBot } from './deepseek-web'
 import { GeminiBot } from './gemini-api'
 import { GrokWebBot } from './grok'
+import { KimiWebBot } from './kimi-web'
 import { LMSYSBot } from './lmsys'
 import { PerplexityBot } from './perplexity'
 import { PiBot } from './pi'
@@ -18,6 +19,7 @@ export type BotId =
   | 'bard'
   | 'claude'
   | 'deepseek'
+  | 'kimi'
   | 'perplexity'
   | 'xunfei'
   | 'vicuna'
@@ -45,6 +47,8 @@ export function createBotInstance(botId: BotId) {
       return new ClaudeBot()
     case 'deepseek':
       return new DeepSeekWebBot()
+    case 'kimi':
+      return new KimiWebBot()
     case 'xunfei':
       return new XunfeiBot()
     case 'vicuna':
